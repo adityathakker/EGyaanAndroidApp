@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/egyaan_orange</color>
+    <color name="colorPrimaryDark">@color/egyaan_orange_dark</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="egyaan_orange">#fc9312</color>
+    <color name="egyaan_orange_dark">#d47300</color>
+    <color name="egyaan_grey">#666666</color>
+    <color name="white">#fff</color>
+</resources>
