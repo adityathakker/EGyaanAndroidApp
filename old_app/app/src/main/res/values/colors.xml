@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<<<<<<< HEAD
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="dividerColor">#B6B6B6</color>
+    <color name="textIcon">#212121</color>
+    <color name="lightPrimaryColor">#FFE0B2</color>
+=======
+    <color name="colorPrimary">@color/egyaan_orange</color>
+    <color name="colorPrimaryDark">@color/egyaan_orange_dark</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="egyaan_orange">#fc9312</color>
+    <color name="egyaan_orange_dark">#d47300</color>
+    <color name="egyaan_grey">#666666</color>
+    <color name="white">#fff</color>
+>>>>>>> 4d45fb75664afcce5f64d93f095e81be17ce38ac
+</resources>

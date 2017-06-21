@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 4d45fb75664afcce5f64d93f095e81be17ce38ac
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+<<<<<<< HEAD
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/logo_layout_activity_login"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/egyaan_logo"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@id/logo_layout_activity_login"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="Welcome"
+            android:textColor="#101010"
+            android:id="@+id/welcome_text"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#383838"
+            android:text="You need to login to use this app"
+            android:id="@+id/support_text"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/welcome_text"/>
+
+        <EditText
+            android:id="@+id/email_activity_login"
+            android:layout_below="@id/support_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_login_edittext"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#B9BDC0"
+            android:text="bk@gmail.com"/>
+
+        <EditText
+            android:id="@+id/password_activity_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_login_edittext"
+            android:layout_below="@id/email_activity_login"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#B9BDC0"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="bk1411" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_activity_login"
+            android:text="Login"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:shadowRadius="0"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/button_activity_login"
+            android:background="@drawable/custom_login_button" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+=======
+    android:fitsSystemWindows="true"
+    tools:context="com.adityathakker.egyaan.ui.activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:background="@color/egyaan_orange">
+
+            <ImageView
+                android:id="@+id/activity_login_imageview_strips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/double_strips_background" />
+
+            <ImageView
+                android:id="@+id/activity_login_imageview_egyaan_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/egyaan_logo_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.2"
+            android:paddingBottom="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:id="@+id/activity_login_textview_support_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="Login To E-Gyaan"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/activity_login_textview_support_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                android:text="Welcome"
+                android:textSize="64sp" />
+
+            <EditText
+                android:id="@+id/activity_login_edittext_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_login_textview_support_login"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circular_edittext"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:fontFamily="sans-serif"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_login_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_login_edittext_email_address"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circular_edittext"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/activity_login_button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_login_edittext_password"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circular_button"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+>>>>>>> 4d45fb75664afcce5f64d93f095e81be17ce38ac

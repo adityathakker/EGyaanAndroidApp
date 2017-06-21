@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+<<<<<<< HEAD
+        classpath 'com.android.tools.build:gradle:2.1.0'
+=======
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+>>>>>>> 4d45fb75664afcce5f64d93f095e81be17ce38ac
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+<<<<<<< HEAD
+=======
+
+ext{
+    butterKnifeVersion = '8.4.0'
+}
+>>>>>>> 4d45fb75664afcce5f64d93f095e81be17ce38ac
