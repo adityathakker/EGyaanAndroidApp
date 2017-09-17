@@ -3,14 +3,14 @@ apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.adityathakker.egyaan"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "android.support.activity_test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -29,16 +29,19 @@ dependencies {
     compile "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
     apt "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
 
-
-
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.github.bumptech.glide:glide:3.5.2'
     compile 'com.android.support:support-v4:25.1.0'
     compile 'com.android.support:design:25.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.android.support:cardview-v7:25.1.0'
     testCompile 'junit:junit:4.12'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 }
+
+apply plugin: 'com.google.gms.google-services'

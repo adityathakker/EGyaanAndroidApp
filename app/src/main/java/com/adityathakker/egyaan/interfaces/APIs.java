@@ -2,6 +2,8 @@ package com.adityathakker.egyaan.interfaces;
 
 import com.adityathakker.egyaan.models.GeneralModel;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -11,6 +13,9 @@ import retrofit2.http.Query;
  */
 
 public interface APIs {
-    @GET("login/login_checker.php")
-    Call<GeneralModel> loginChecker(@Query("email") String email, @Query("password") String password);
+    @GET("login.php")
+    Call<List<GeneralModel>> loginChecker(@Query("username") String email, @Query("password") String password);
+
+    @GET("timetable.php")
+    Call<List<GeneralModel>> timetableData(@Query("batch_id") String batchId, @Query("day_id") String day_id);
 }
