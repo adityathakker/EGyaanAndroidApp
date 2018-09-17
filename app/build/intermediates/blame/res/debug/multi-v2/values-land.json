@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/fireion/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/b0ec91046886a225caf9056e9e25eec3/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "505"
+                    }
+                },
+                {
+                    "source": "/home/fireion/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c65d5e1ee0a234536d8df05c93bdb6e3/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        }
+    ]
+}

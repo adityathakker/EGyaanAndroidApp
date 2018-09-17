@@ -6,8 +6,9 @@ package com.adityathakker.egyaan.utils;
 
 public class AppConst {
     public static class URLs {
-        public static final String SERVER_URL = "http://192.168.1.108/EGyaan_OpenSource/modules/mobile/functions/";
-        public static final String IMAGE_URL = "http://192.168.1.108/EGyaan_OpenSource/modules/manage_student/images/student/";
+        public static final String SERVER_URL = "http://192.168.42.3/EGyaan_OpenSource/modules/mobile/functions/";
+        public static final String IMAGE_URL = "http://192.168.42.3/EGyaan_OpenSource/modules/manage_student/images/student/";
+        public static final String NOTES_FILE_URL = "http://192.168.42.3/EGyaan_OpenSource/modules/manage_notes/function/";
     }
 
     public static class Messages {
@@ -16,8 +17,13 @@ public class AppConst {
         public static final String EMPTY_NULL_DATA = "Empty or Null Data received";
         public static final String UNABLE_TO_REACH_SERVER = "Unable to reach server";
         public static final String UNABLE_TO_INSERT = "Error while inserting";
-        public static final String SUCCESSFULL_LOG_OUT = "You are Successfully logged out";
-        public static final String ERROR_SUCCESSFULL_LOG_OUT = "Error while logging you out";
+        public static final String SUCCESSFUL_LOG_OUT = "You are Successfully logged out";
+        public static final String ERROR_SUCCESSFUL_LOG_OUT = "Error while logging you out";
+        public static final String ERROR_NO_SD_CARD = "Oops!! There is no SD Card.";
+        public static final String NO_DIRECTORY = "Right now there is no directory. Please download some file first.";
+        public static final String FILE_EXISTS = "Already Exits";
+        public static final String LOADING = "Loading";
+        public static final String PLEASE_WAIT = "Please wait";
     }
 
     public static class Statuses {
@@ -30,7 +36,6 @@ public class AppConst {
         public static final String PASSWORD = "password";
         public static final String PROJ_NAME = "EGyaan";
         public static final String FIRSTNAME = "firstname";
-        public static final String DATABASE_NAME = "egn_android";
         public static final String DAY_1 = "Monday";
         public static final String DAY_2 = "Tuesday";
         public static final String DAY_3 = "Wednesday";
@@ -39,12 +44,15 @@ public class AppConst {
         public static final String DAY_6 = "Saturday";
         public static final String DAY_7 = "Sunday";
         public static final String IS_OPENED_FIRST_TIME = "isOpenedFirstTime";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_1 = "isOpenedTimetableFirstTimeDay1";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_2 = "isOpenedTimetableFirstTimeDay2";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_3 = "isOpenedTimetableFirstTimeDay3";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_4 = "isOpenedTimetableFirstTimeDay4";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_5 = "isOpenedTimetableFirstTimeDay5";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_6 = "isOpenedTimetableFirstTimeDay6";
-        public static final String IS_OPENED_TIMETABLE_FIRST_TIME_DAY_7 = "isOpenedTimetableFirstTimeDay7";
+        public static final String IS_HOME_TIMETABLE_OPENED_FIRST_TIME = "isHomeTimetableOpenedFirstTime";
+        public static final String IS_HOME_TESTS_OPENED_FIRST_TIME = "isHomeTestsOpenedFirstTime";
+        public static final String DOWNLOAD_DIRECTORY = "EGyaan";
+        public static final String DOWNLOAD_NOTES_FILES_DIRECTORY = "Notes";
+        public static final String NOTICEBOARD_BRANCH = "Branch";
+        public static final String NOTICEBOARD_COMMON = "Common";
+        public static final String WIFI = "WiFi";
+        public static final String MOBILE = "Mobile";
+        public static final String NULL_CONNECTION = "null";
+        static final String DATABASE_NAME = "egn_android";
     }
 }

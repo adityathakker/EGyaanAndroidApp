@@ -2,62 +2,76 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    card_view:cardCornerRadius="1dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp">
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="8dp">
 
     <LinearLayout
-        android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/card_row_course_name"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:paddingBottom="8dp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="8dp"
+            android:padding="6dp"
             android:text="Course Name"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/card_row_time"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card_row_course_name"
-            android:layout_marginBottom="5dp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="Time"
-            android:textSize="@dimen/text_size_timetable" />
+            android:layout_height="2dp"
+            android:background="@color/lightgray" />
 
-        <TextView
-            android:id="@+id/card_row_teacher_name"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/card_row_time"
-            android:layout_marginBottom="5dp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="Teacher Name"
-            android:textSize="@dimen/text_size_timetable" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/card_row_comment"
-            android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/card_row_time_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Time:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/card_row_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/card_row_teacher_name"
-            android:layout_marginBottom="5dp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="Comment"
-            android:textSize="@dimen/text_size_timetable" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/card_row_teacher_name_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Lecturer:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/card_row_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Teacher Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </android.support.v7.widget.CardView>

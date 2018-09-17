@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
 import com.adityathakker.egyaan.R;
-import com.adityathakker.egyaan.ui.activities.HomeActivity;
+import com.adityathakker.egyaan.fragments.HomeActivity;
 import com.google.firebase.messaging.RemoteMessage;
 
 /**

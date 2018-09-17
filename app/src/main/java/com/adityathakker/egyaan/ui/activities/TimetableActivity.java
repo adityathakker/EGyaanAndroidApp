@@ -9,17 +9,18 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.adityathakker.egyaan.R;
-import com.adityathakker.egyaan.fragments.TimetableDayFive;
-import com.adityathakker.egyaan.fragments.TimetableDayFour;
-import com.adityathakker.egyaan.fragments.TimetableDayOne;
-import com.adityathakker.egyaan.fragments.TimetableDaySeven;
-import com.adityathakker.egyaan.fragments.TimetableDaySix;
-import com.adityathakker.egyaan.fragments.TimetableDayThree;
-import com.adityathakker.egyaan.fragments.TimetableDayTwo;
-import com.adityathakker.egyaan.fragments.ViewPagerAdapter;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDayFive;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDayFour;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDayOne;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDaySeven;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDaySix;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDayThree;
+import com.adityathakker.egyaan.fragments.timetable.TimetableDayTwo;
+import com.adityathakker.egyaan.fragments.timetable.TimetableViewPagerAdapter;
 import com.adityathakker.egyaan.utils.AppConst;
 
 import butterknife.BindView;
@@ -47,22 +48,28 @@ public class TimetableActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbarTimetable);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        } else {
+            Log.d(TAG, "onCreate: Toolbar Null data");
+        }
+
         setupViewPager(viewPagerTimetable);
         tabLayoutTimetable.setupWithViewPager(viewPagerTimetable);
     }
 
     @TargetApi(Build.VERSION_CODES.N)
     private void setupViewPager(ViewPager viewPagerTimetable) {
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(new TimetableDayOne(), AppConst.Extras.DAY_1);
-        viewPagerAdapter.addFragment(new TimetableDayTwo(), AppConst.Extras.DAY_2);
-        viewPagerAdapter.addFragment(new TimetableDayThree(), AppConst.Extras.DAY_3);
-        viewPagerAdapter.addFragment(new TimetableDayFour(), AppConst.Extras.DAY_4);
-        viewPagerAdapter.addFragment(new TimetableDayFive(), AppConst.Extras.DAY_5);
-        viewPagerAdapter.addFragment(new TimetableDaySix(), AppConst.Extras.DAY_6);
-        viewPagerAdapter.addFragment(new TimetableDaySeven(), AppConst.Extras.DAY_7);
+        TimetableViewPagerAdapter timetableViewPagerAdapter = new TimetableViewPagerAdapter(getSupportFragmentManager());
+        timetableViewPagerAdapter.addFragment(new TimetableDayOne(), AppConst.Extras.DAY_1);
+        timetableViewPagerAdapter.addFragment(new TimetableDayTwo(), AppConst.Extras.DAY_2);
+        timetableViewPagerAdapter.addFragment(new TimetableDayThree(), AppConst.Extras.DAY_3);
+        timetableViewPagerAdapter.addFragment(new TimetableDayFour(), AppConst.Extras.DAY_4);
+        timetableViewPagerAdapter.addFragment(new TimetableDayFive(), AppConst.Extras.DAY_5);
+        timetableViewPagerAdapter.addFragment(new TimetableDaySix(), AppConst.Extras.DAY_6);
+        timetableViewPagerAdapter.addFragment(new TimetableDaySeven(), AppConst.Extras.DAY_7);
 
-        viewPagerTimetable.setAdapter(viewPagerAdapter);
+        viewPagerTimetable.setAdapter(timetableViewPagerAdapter);
 
         Calendar c = Calendar.getInstance();
         int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);

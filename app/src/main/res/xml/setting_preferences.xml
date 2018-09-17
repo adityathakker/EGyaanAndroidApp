@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_header_general">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_toggle"
+            android:title="Download over Wi-Fi only" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_information">
+
+        <Preference
+            android:key="@string/pref_header_about"
+            android:summary="@string/summary_about"
+            android:title="@string/pref_header_about" />
+
+        <!-- preference opens url in browser -->
+        <Preference android:title="@string/visit_website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_website" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/email_id"
+            android:title="@string/email_us" />
+
+        <Preference android:title="@string/title_github">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_github" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_account">
+
+        <Preference
+            android:key="@string/key_log_out"
+            android:title="@string/log_out" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

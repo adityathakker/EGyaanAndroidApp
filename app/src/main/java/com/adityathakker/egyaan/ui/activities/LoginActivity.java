@@ -22,6 +22,7 @@ import com.adityathakker.egyaan.models.GeneralModel;
 import com.adityathakker.egyaan.utils.AppConst;
 import com.adityathakker.egyaan.utils.CommonTasks;
 import com.adityathakker.egyaan.utils.DatabaseHandler;
+import com.adityathakker.egyaan.utils.ProgressBar;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -39,13 +40,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = LoginActivity.class.getSimpleName();
-    DatabaseHandler databaseHandler;
-
     @BindView(R.id.activity_login_imageview_strips)
     ImageView stripsBackground;
     @BindView(R.id.activity_login_imageview_egyaan_logo)
     ImageView egyaanLogo;
-
     @BindView(R.id.activity_login_textview_support_login)
     TextView supportLogin;
     @BindView(R.id.activity_login_textview_support_welcome)
@@ -56,14 +54,15 @@ public class LoginActivity extends AppCompatActivity {
     EditText passwordEditText;
     @BindView(R.id.activity_login_button_login)
     Button loginButton;
+    DatabaseHandler databaseHandler;
+    ProgressBar progressBarHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-
-        databaseHandler = new DatabaseHandler(this);
+        progressBarHome = new ProgressBar();
 
         SharedPreferences sharedPreferences = getSharedPreferences(AppConst.Extras.PROJ_NAME, MODE_PRIVATE);
         if (!sharedPreferences.getBoolean(AppConst.Extras.IS_OPENED_FIRST_TIME, false)) {
@@ -76,9 +75,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = preferences.getString(AppConst.Extras.PASSWORD, null);
 
             if (userName != null && password != null && !userName.equals("") && !password.equals("")) {
-//                Toast.makeText(this, "Welcome " + preferences.getString(AppConst.Extras.FIRSTNAME, null),
-//                        Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, HomeActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 finish();
             } else {
@@ -115,11 +112,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.activity_login_button_login)
-    public void validateAndLogin(View view) {
+    public void validateAndLogin(final View view) {
+        progressBarHome.showProgressBar(this);
+
         final String emailString = emailEditText.getText().toString();
         if (emailString == null || emailString.equals("")) {
             Toast.makeText(this, "Email Address Field Cannot Be Empty", Toast.LENGTH_SHORT).show();
             ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(500);
+            progressBarHome.dismissProgressBar();
             return;
         }
 
@@ -127,9 +127,11 @@ public class LoginActivity extends AppCompatActivity {
         if (passwordString == null || passwordString.equals("")) {
             Toast.makeText(this, "Password Field Cannot Be Empty", Toast.LENGTH_SHORT).show();
             ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(500);
+            progressBarHome.dismissProgressBar();
             return;
         }
-        if (CommonTasks.isDataOn(this)) {
+
+        if (CommonTasks.isDataOn(this).equals(AppConst.Extras.WIFI) || CommonTasks.isDataOn(this).equals(AppConst.Extras.MOBILE)) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(AppConst.URLs.SERVER_URL)
                     .addConverterFactory(GsonConverterFactory.create())
@@ -141,6 +143,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<List<GeneralModel>> call, Response<List<GeneralModel>> response) {
                     if (response.isSuccessful()) {
+                        progressBarHome.dismissProgressBar();
                         List<GeneralModel> models = response.body();
 //                        Log.d(TAG, "onResponse: " + models);
                         String status = null;
@@ -153,6 +156,7 @@ public class LoginActivity extends AppCompatActivity {
                             status = models.get(i).getStatus();
                         }
                         if (status.equals(AppConst.Statuses.SUCCESS)) {
+                            databaseHandler = new DatabaseHandler(getApplicationContext());
                             for (int i = 0; i < models.size(); i++) {
                                 roleId = models.get(i).getDetails().getRoleId();
                                 userId = models.get(i).getDetails().getUserId();
@@ -183,29 +187,38 @@ public class LoginActivity extends AppCompatActivity {
                                         batchId, branchId, parentName, parentEmail, parentPasswd, parentMobile);
                                 initiateFirebaseProcess();
 
-                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
                             } else {
-                                Toast.makeText(LoginActivity.this, AppConst.Messages.EMPTY_NULL_DATA, Toast.LENGTH_SHORT).show();
+                                progressBarHome.dismissProgressBar();
+//                                Toast.makeText(LoginActivity.this, AppConst.Messages.EMPTY_NULL_DATA, Toast.LENGTH_SHORT).show();
+                                CommonTasks.showMessage(view, AppConst.Messages.EMPTY_NULL_DATA);
                             }
                         } else {
-                            Toast.makeText(LoginActivity.this, AppConst.Messages.WRONG_CREDENTIALS, Toast.LENGTH_SHORT).show();
+                            progressBarHome.dismissProgressBar();
+//                            Toast.makeText(LoginActivity.this, AppConst.Messages.WRONG_CREDENTIALS, Toast.LENGTH_SHORT).show();
+                            CommonTasks.showMessage(view, AppConst.Messages.WRONG_CREDENTIALS);
                         }
                     } else {
-                        Toast.makeText(LoginActivity.this, AppConst.Statuses.FAILED, Toast.LENGTH_SHORT).show();
+                        progressBarHome.dismissProgressBar();
+//                        Toast.makeText(LoginActivity.this, AppConst.Messages.UNABLE_TO_REACH_SERVER, Toast.LENGTH_SHORT).show();
+                        CommonTasks.showMessage(view, AppConst.Messages.UNABLE_TO_REACH_SERVER);
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<GeneralModel>> call, Throwable t) {
+                    progressBarHome.dismissProgressBar();
                     Log.e(TAG, "onFailure: ", t);
-                    Toast.makeText(LoginActivity.this, AppConst.Messages.UNABLE_TO_REACH_SERVER, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(LoginActivity.this, AppConst.Messages.UNABLE_TO_REACH_SERVER, Toast.LENGTH_SHORT).show();
+                    CommonTasks.showMessage(view, AppConst.Messages.UNABLE_TO_REACH_SERVER);
                 }
             });
         } else {
 //            Toast.makeText(this, AppConst.Messages.NO_INTERNET, Toast.LENGTH_SHORT).show();
-            CommonTasks.showMessage(view);
+            progressBarHome.dismissProgressBar();
+            CommonTasks.showMessage(view, AppConst.Messages.NO_INTERNET);
         }
     }
 
@@ -217,13 +230,6 @@ public class LoginActivity extends AppCompatActivity {
     public void setSharedPreferences(String email, String password, String firstname) {
         SharedPreferences.Editor editor = getSharedPreferences(AppConst.Extras.PROJ_NAME, MODE_PRIVATE).edit();
         editor.putBoolean(AppConst.Extras.IS_OPENED_FIRST_TIME, true);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_1, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_2, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_3, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_4, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_5, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_6, false);
-        editor.putBoolean(AppConst.Extras.IS_OPENED_TIMETABLE_FIRST_TIME_DAY_7, false);
         editor.putString(AppConst.Extras.USERNAME, email);
         editor.putString(AppConst.Extras.PASSWORD, password);
         editor.putString(AppConst.Extras.FIRSTNAME, firstname);

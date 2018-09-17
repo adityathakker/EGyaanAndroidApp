@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">810768468446-0gbdssm0288mor94fpv6j82l7dc1f30a.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://egyaan-10cd8.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">810768468446</string>
+    <string name="google_api_key" translatable="false">AIzaSyDi-VubqsjgZdX70RCRbnkiLWuEsEcqYxU</string>
+    <string name="google_app_id" translatable="false">1:810768468446:android:306a220d2a2b6619</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDi-VubqsjgZdX70RCRbnkiLWuEsEcqYxU</string>
+    <string name="google_storage_bucket" translatable="false">egyaan-10cd8.appspot.com</string>
+</resources>

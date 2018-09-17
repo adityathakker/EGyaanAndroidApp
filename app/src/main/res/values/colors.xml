@@ -2,9 +2,16 @@
 <resources>
     <color name="colorPrimary">@color/egyaan_orange</color>
     <color name="colorPrimaryDark">@color/egyaan_orange_dark</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="egyaan_orange">#FC9312</color>
-    <color name="egyaan_orange_dark">#D47300</color>
+
+    <color name="colorAccent">#FF9800</color>
+    <color name="lightPrimaryColor">#FFE0B2</color>
+    <color name="egyaan_orange">#FF9800</color>
+    <color name="egyaan_orange_dark">#F57C00</color>
     <color name="egyaan_grey">#666666</color>
     <color name="white">#FFFFFF</color>
+    <color name="lightgray">#F5F5F5</color>
+
+    <color name="primaryText">#000000</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
 </resources>

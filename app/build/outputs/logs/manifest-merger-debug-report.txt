@@ -1,0 +1,586 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:96:9-104:20
+	android:grantUriPermissions
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:100:13-47
+	android:authorities
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:98:13-60
+	android:exported
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:99:13-37
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:97:13-67
+manifest
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+MERGED from [com.jakewharton:butterknife:8.4.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/butterknife-8.4.0.aar/5954e7ba73cb42ea139357ecc2512446/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/9b7fe6eaf6ff5386cdeec1b12c28bc67/AndroidManifest.xml:2:1-6:12
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:17:1-59:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e38a08b2ab3a438fe79ea9f23a1fbe44/AndroidManifest.xml:2:1-11:12
+MERGED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:17:1-32:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:2:1-15:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/8e008cdcb8deee26f256f7e26338a20b/AndroidManifest.xml:6:1-16:12
+MERGED from [com.android.support:design:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/b0ec91046886a225caf9056e9e25eec3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c65d5e1ee0a234536d8df05c93bdb6e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/afc084d531e4ebc55d92cf71a4eb571e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/43c0a051f8ca6fca0d5da463bcaf818a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:17:1-54:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/5b46f68e77f0b80613960365a176ee63/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/cb4ce2d705079256c7bebf291f448860/AndroidManifest.xml:17:1-22:12
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/0d687c203926a0fe6d984ad4ec647a01/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/9d6c2094236287c1deaa7c76ebe13c92/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c78b09f10a4ac802702492058a75c487/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f8fc959d1a3cf8746371f5764dffc589/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/154cc47c975686d77d89324ae83e7c21/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/4aa707c26abf2a83a0685e24ab22e9be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/9da02597a6bcb274b7744e37e4f3fb94/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1296cd3c54c8b100779c4ecfb0d90a1f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/876cf0528ce65e2240cb270dfe07b62b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.8.0.aar/7b4658a6f1643d18676ef8d41cd8b24e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/d45430486fef7b391ed0b9d20d9014ea/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/fireion/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/c7f666f1e157aab5c4be23ffe2c48edd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/313fdfb109ff3a9ab3064295232c012c/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/0bcf936c1c956952f97c8f99c92d8466/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/8bddb84016fe9780075c78d4ae8a361a/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/37d070afe2debb4df9b6e947c2be9d8f/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/f701ae7ed43ad2f6a42b2cb279c477b8/AndroidManifest.xml:2:1-6:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+	package
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:3:5-39
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:1-108:12
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:6:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:10:22-73
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:11:5-80
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:25:5-80
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:12:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:26:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:12:22-78
+application
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:14:5-106:19
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/9b7fe6eaf6ff5386cdeec1b12c28bc67/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/9b7fe6eaf6ff5386cdeec1b12c28bc67/AndroidManifest.xml:5:5-20
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:28:5-57:19
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:28:5-57:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e38a08b2ab3a438fe79ea9f23a1fbe44/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e38a08b2ab3a438fe79ea9f23a1fbe44/AndroidManifest.xml:9:5-20
+MERGED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:26:5-30:19
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:13:5-20
+MERGED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/5b46f68e77f0b80613960365a176ee63/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/5b46f68e77f0b80613960365a176ee63/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/0d687c203926a0fe6d984ad4ec647a01/AndroidManifest.xml:11:5-13:38
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/0d687c203926a0fe6d984ad4ec647a01/AndroidManifest.xml:11:5-13:38
+MERGED from [com.google.firebase:firebase-messaging-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.8.0.aar/7b4658a6f1643d18676ef8d41cd8b24e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-messaging-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.8.0.aar/7b4658a6f1643d18676ef8d41cd8b24e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/d45430486fef7b391ed0b9d20d9014ea/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/d45430486fef7b391ed0b9d20d9014ea/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/313fdfb109ff3a9ab3064295232c012c/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/313fdfb109ff3a9ab3064295232c012c/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/0bcf936c1c956952f97c8f99c92d8466/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/0bcf936c1c956952f97c8f99c92d8466/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/8bddb84016fe9780075c78d4ae8a361a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/8bddb84016fe9780075c78d4ae8a361a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/37d070afe2debb4df9b6e947c2be9d8f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/37d070afe2debb4df9b6e947c2be9d8f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/f701ae7ed43ad2f6a42b2cb279c477b8/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/f701ae7ed43ad2f6a42b2cb279c477b8/AndroidManifest.xml:5:5-20
+	android:supportsRtl
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:19:9-40
+activity#com.adityathakker.egyaan.ui.activities.LoginActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:20:9-31:20
+	android:screenOrientation
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:23:13-49
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:22:13-45
+	android:windowSoftInputMode
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:25:13-67
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:21:13-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.adityathakker.egyaan.ui.activities.MainActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:32:9-34:59
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:33:13-55
+activity#com.adityathakker.egyaan.ui.activities.TimetableActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:35:9-40:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:39:13-69
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:38:13-61
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:37:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:40:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:36:13-60
+activity#com.adityathakker.egyaan.ui.activities.NotesActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:41:9-46:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:45:13-69
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:44:13-58
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:43:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:46:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:42:13-56
+activity#com.adityathakker.egyaan.ui.activities.FullNotesViewActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:47:9-52:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:51:13-70
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:50:13-67
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:49:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:52:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:48:13-64
+activity#com.adityathakker.egyaan.ui.activities.TestsActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:53:9-58:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:57:13-69
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:56:13-57
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:55:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:58:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:54:13-56
+activity#com.adityathakker.egyaan.ui.activities.TestsDetailsActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:59:9-64:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:63:13-70
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:62:13-65
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:61:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:64:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:60:13-63
+activity#com.adityathakker.egyaan.ui.activities.NoticeboardActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:65:9-70:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:69:13-69
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:68:13-63
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:67:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:70:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:66:13-62
+activity#com.adityathakker.egyaan.ui.activities.FullNoticeboardViewActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:71:9-76:55
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:75:13-76
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:74:13-73
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:73:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:76:13-52
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:72:13-70
+activity#com.adityathakker.egyaan.fragments.SettingsActivity
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:78:9-83:47
+	android:parentActivityName
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:82:13-69
+	android:label
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:81:13-60
+	android:configChanges
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:80:13-59
+	android:theme
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:83:13-44
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:79:13-55
+service#com.adityathakker.egyaan.utils.FirebaseInstanceIDService
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:85:9-89:19
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:85:18-65
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:86:13-88:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:87:17-80
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:87:25-77
+service#com.adityathakker.egyaan.utils.FirebaseMessagingService
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:90:9-94:19
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:90:18-64
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:91:13-93:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:92:17-78
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:92:25-75
+uses-sdk
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+MERGED from [com.jakewharton:butterknife:8.4.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/butterknife-8.4.0.aar/5954e7ba73cb42ea139357ecc2512446/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.4.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/butterknife-8.4.0.aar/5954e7ba73cb42ea139357ecc2512446/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/9b7fe6eaf6ff5386cdeec1b12c28bc67/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/9b7fe6eaf6ff5386cdeec1b12c28bc67/AndroidManifest.xml:4:5-43
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e38a08b2ab3a438fe79ea9f23a1fbe44/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e38a08b2ab3a438fe79ea9f23a1fbe44/AndroidManifest.xml:5:5-7:41
+MERGED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:22:5-24:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:8:5-11:75
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/8e008cdcb8deee26f256f7e26338a20b/AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/8e008cdcb8deee26f256f7e26338a20b/AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:design:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/b0ec91046886a225caf9056e9e25eec3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/b0ec91046886a225caf9056e9e25eec3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c65d5e1ee0a234536d8df05c93bdb6e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c65d5e1ee0a234536d8df05c93bdb6e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/afc084d531e4ebc55d92cf71a4eb571e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/afc084d531e4ebc55d92cf71a4eb571e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/43c0a051f8ca6fca0d5da463bcaf818a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/43c0a051f8ca6fca0d5da463bcaf818a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/5b46f68e77f0b80613960365a176ee63/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/5b46f68e77f0b80613960365a176ee63/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/cb4ce2d705079256c7bebf291f448860/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/cb4ce2d705079256c7bebf291f448860/AndroidManifest.xml:20:5-44
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/0d687c203926a0fe6d984ad4ec647a01/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/0d687c203926a0fe6d984ad4ec647a01/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/9d6c2094236287c1deaa7c76ebe13c92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/9d6c2094236287c1deaa7c76ebe13c92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c78b09f10a4ac802702492058a75c487/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c78b09f10a4ac802702492058a75c487/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f8fc959d1a3cf8746371f5764dffc589/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f8fc959d1a3cf8746371f5764dffc589/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/154cc47c975686d77d89324ae83e7c21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/154cc47c975686d77d89324ae83e7c21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/4aa707c26abf2a83a0685e24ab22e9be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/4aa707c26abf2a83a0685e24ab22e9be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/9da02597a6bcb274b7744e37e4f3fb94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/9da02597a6bcb274b7744e37e4f3fb94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1296cd3c54c8b100779c4ecfb0d90a1f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1296cd3c54c8b100779c4ecfb0d90a1f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/876cf0528ce65e2240cb270dfe07b62b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/fireion/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/876cf0528ce65e2240cb270dfe07b62b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.8.0.aar/7b4658a6f1643d18676ef8d41cd8b24e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-messaging-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.8.0.aar/7b4658a6f1643d18676ef8d41cd8b24e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/d45430486fef7b391ed0b9d20d9014ea/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/d45430486fef7b391ed0b9d20d9014ea/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/fireion/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/c7f666f1e157aab5c4be23ffe2c48edd/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/fireion/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/c7f666f1e157aab5c4be23ffe2c48edd/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/313fdfb109ff3a9ab3064295232c012c/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/313fdfb109ff3a9ab3064295232c012c/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/0bcf936c1c956952f97c8f99c92d8466/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/0bcf936c1c956952f97c8f99c92d8466/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/8bddb84016fe9780075c78d4ae8a361a/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/8bddb84016fe9780075c78d4ae8a361a/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/37d070afe2debb4df9b6e947c2be9d8f/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/37d070afe2debb4df9b6e947c2be9d8f/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/f701ae7ed43ad2f6a42b2cb279c477b8/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/f701ae7ed43ad2f6a42b2cb279c477b8/AndroidManifest.xml:4:5-43
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.afollestad.material-dialogs:core:0.9.6.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/600469cf15750df01b4b65d23e1e5896/AndroidManifest.xml:11:9-72
+	android:targetSdkVersion
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:101:13-103:58
+	android:resource
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:103:17-55
+	android:name
+		ADDED from /home/fireion/AndroidStudioProjects/EGyaanAndroidApp/app/src/main/AndroidManifest.xml:102:17-67
+service#com.squareup.leakcanary.internal.HeapAnalyzerService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:29:9-32:45
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:32:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:30:13-80
+service#com.squareup.leakcanary.DisplayLeakService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:33:9-35:39
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:34:13-70
+activity#com.squareup.leakcanary.internal.DisplayLeakActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:37:9-49:20
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:39:13-36
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:41:13-71
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:40:13-54
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:43:13-63
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:42:13-59
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:38:13-80
+activity#com.squareup.leakcanary.internal.RequestStoragePermissionActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:50:9-56:68
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:52:13-36
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:54:13-82
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:53:13-54
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:56:13-65
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:55:13-59
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5] /home/fireion/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.aar/71da1a59e5362255e98a8735e25acf69/AndroidManifest.xml:51:13-93
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:4.2.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/0636910b2413895934144e3bf19ed45c/AndroidManifest.xml:28:13-60
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.8.0.aar/3fe32cead23444c452b3d6684969e118/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:25:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:28:9-32:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:30:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:29:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:33:9-41:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:36:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:37:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:34:13-100
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:38:13-40:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:39:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:43:9-46:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:34:9-37:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/d22e7121d5acff77bed4dc78222ece54/AndroidManifest.xml:34:9-37:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:45:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:44:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:47:9-51:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:49:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:50:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/0af65fd3b30ce80b25505a675a0a619a/AndroidManifest.xml:48:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:29:9-63
+permission#com.adityathakker.egyaan.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:32:22-76
+uses-permission#com.adityathakker.egyaan.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:32:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:35:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:38:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:36:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:39:13-43:29
+intent-filter#com.adityathakker.egyaan+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:39:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:40:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:40:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:42:27-58
+category#com.adityathakker.egyaan
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:42:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/ac5b0ef972b500e1c6df25bce6dd662e/AndroidManifest.xml:51:13-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/b6afb4a7753a0f7afec6890f8c3eacc6/AndroidManifest.xml:9:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/fireion/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/fca8030243e2dc167c49d7c837129a9c/AndroidManifest.xml:24:13-58

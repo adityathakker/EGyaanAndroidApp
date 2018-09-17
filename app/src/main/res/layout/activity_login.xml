@@ -55,7 +55,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="16dp"
                 android:text="Login To E-Gyaan"
-                android:textSize="24sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/activity_login_textview_support_welcome"
@@ -78,6 +78,7 @@
                 android:hint="Enter Email Address"
                 android:inputType="textEmailAddress"
                 android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:text="jigneshd108@gmail.com" />
 
             <EditText
@@ -91,6 +92,7 @@
                 android:hint="Enter Password"
                 android:inputType="textPassword"
                 android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:text="M6i6" />
 
             <Button
@@ -102,9 +104,9 @@
                 android:background="@drawable/circular_button"
                 android:paddingLeft="48dp"
                 android:paddingRight="48dp"
-                android:text="Login"
+                android:text="@string/title_activity_login"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         </RelativeLayout>
 
     </LinearLayout>
